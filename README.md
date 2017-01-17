@@ -2,8 +2,8 @@
 ---
 Discription: Student portal created for students to login to their account to access institute announcements using Joomla CMS and link to Moodle LMS for students to read their lessons
 ---
-Steps followed:
 Migrating current mywai student portal (2.5) to a new instance (3.5) using migratemeplus on local m/c
+---
 * Assuming we have already installed XAMPP server and enabled the ports, we clean up our current joomla instance (2.5) before migration.
 * Go to extensions manager-> manage-> and uninstall all the following components:
 1.	All Joomdle plugins and components.
@@ -50,3 +50,38 @@ o	Chronoforms V5
 o	Docman 2.1
 o	 Latest rocket theme (photon 1.0.2)
 *	Take a backup of this instance using Akeeba backup and upload it into server. Set up server using the following steps and unzip the backup and install the joomla instance. 
+---
+Steps followed while hosting mywai student portal on VMs.
+---
+* Create virtual host and make directories for mywai portal and create databases.
+*	Make directories and change the ownership of the root folder.
+         mkdir -p /var/joomla_sites/mywai/                        		
+          mkdir /var/joomla_sites/mywai/backup               		
+              mkdir /var/joomla_sites/mywai/www 	       		
+                  chown -R apache:apache /var/joomla_sites/mywai/www     	 
+*	Create a new config file:
+      sudo vim /etc/httpd/sites-available/mywai.conf		
+*	 Add the following command in it and save and close
+      <VirtualHost *:80>
+          ServerAdmin root@localhost
+          ServerName mywai-2016.angliss.edu.au
+          DocumentRoot /var/joomla_sites/mywai/www
+          ErrorLog /var/joomla_sites/mywai/www/error.log
+          CustomLog /var/joomla_sites/mywai/www/requests.log combined
+          <Directory "/var/joomla_sites/mywai/www">
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+            Allow from all
+          </Directory>
+     </VirtualHost>
+*	Enable your virtual host file with a sym link to the sites-enabled directory:
+      sudo ln -s /etc/httpd/sites-available/mywai.conf  /etc/httpd/sites-enabled/mywai.conf 	
+*	Restart Apache:
+      sudo service httpd restart
+*	Create database:   esu_mywai_db_2016                         	
+*	Create user: esu_mywai_admin@localhost;		
+*	Set password for:  esu_mywai_admin@localhost = PASSWORD("2016dbesumyWAI");	
+*	GRANT ALL ON:  esu_mywai_db_2016.* TO esu_mywai_admin@localhost IDENTIFIED BY '2016dbesumyWAI';  
+*	Flush the privileges: FLUSH PRIVILEGES;
+*	Exit putty: Exit
