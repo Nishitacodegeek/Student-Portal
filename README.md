@@ -147,3 +147,7 @@ Configure LDAP
 * Create similar roksprocket modules called “FP Roksprocket Lists Most Popular - under tabs (news)” & “FP Roksprocket Lists Most Recent- under tabs (news)” and then create a roksprocket module with simple provider and tab layout and assign “FP Roksprocket Lists Most Popular - under tabs (news)” & “FP Roksprocket Lists Most Recent- under tabs (news)” to “roktabs - roklist (news)”. Assign it to a position in photon news template.
 *	Add the custom CSS in backend : /var/site/www/templates/rt_topaz/custom/scss/
 * Change to this directory and create a file called custom.scss and add CSS codes. Recompile CSS in admin panel for ‘base outline’ template and see the changes reflected.
+
+Screenshot of a working student portal during iteration2
+
+![image](https://cloud.githubusercontent.com/assets/15920562/22004532/6e841668-dcb0-11e6-8b9a-76d54d629b8d.png)
