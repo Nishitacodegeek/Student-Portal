@@ -148,10 +148,10 @@ Configure LDAP
 *	Add the custom CSS in backend : /var/site/www/templates/rt_topaz/custom/scss/
 * Change to this directory and create a file called custom.scss and add CSS codes. Recompile CSS in admin panel for ‘base outline’ template and see the changes reflected.
 
-Screenshot of a working student portal "Home" Page during iteration 1
+Screenshot of a working student portal "Home" Page during iteration n
 
 ![image](https://cloud.githubusercontent.com/assets/15920562/22004676/a0fdec8a-dcb1-11e6-9a07-845b5b87dff8.png)
 
-Screenshot of a working student portal "News" Page during iteration 1
+Screenshot of a working student portal "News" Page during iteration n
 
 ![image](https://cloud.githubusercontent.com/assets/15920562/22004907/6dec2490-dcb3-11e6-87a5-77b8600f73cd.png)
