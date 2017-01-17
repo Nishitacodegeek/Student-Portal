@@ -49,6 +49,7 @@ o	Akeeba backup 5.1.4
 o	Chronoforms V5
 o	Docman 2.1
 o	 Latest rocket theme (photon 1.0.2).Take a backup of this instance using Akeeba backup and upload it into server. Set up server using the following steps and unzip the backup and install the joomla instance. 
+
 ---
 Steps followed while hosting mywai student portal on VMs.
 ---
@@ -84,3 +85,14 @@ Steps followed while hosting mywai student portal on VMs.
 *	GRANT ALL ON:  esu_mywai_db_2016.* TO esu_mywai_admin@localhost IDENTIFIED BY '2016dbesumyWAI';  
 *	Flush the privileges: FLUSH PRIVILEGES;
 *	Exit putty: Exit
+
+---
+Host file setup
+---
+*	Once centOS is configured and website is added to server and it’s up & running, modify the host files so that my board site is pointing to the URL on server. (i.e.  http://board-2016.angliss.edu.au/)
+*	Go to All programs-> accessories-> notepad-> right click-> run as admin-> file-> open-> C:\Windows\System32\Drivers\etc\Hosts -> add( 173.31.35.10 board-2016.angliss.edu.au)-> save
+*	Now we should be able to access the url as : http://board.angliss.esu.au/
+*	Login at the admin panel as super user and upgrade any extensions suggested in control panel. Next check for updates on joomla site. If available, upgrade them too.
+      o	If your PHP is obsolete, then it can create problems while upgrading joomla to the latest version as it tries to take Akeeba backup which doesn’t work with PHP less than 5.6 versions. In such case, uninstall all the Akeeba components by going to extensions-> manage-> manage-> uninstall all the Akeeba components. Next click on “upgrade joomla” in control panel, click on upgrade.
+          o	If there is an error with “unable to write to tmp directory” then create a /tmp folder and ensure that apache and your account both have write permissions on this folder.
+*	Now install the fresh Akeeba backup on the joomla admin panel.
