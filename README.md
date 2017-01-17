@@ -19,17 +19,17 @@ Migrating current mywai student portal (2.5) to a new instance (3.5) using migra
 11.	 All JCal extensions
 *	Make sure all unnecessary 3rd party extensions are removed.
 *	Now install migratemeplus and click on configurations. Make sure migration speed is selected as “slow” and backup is enabled. Click save and click on “migrate” button.
-o	If a JSON error pops up with PHP timeout error, go to php.ini file and increase the “max_execution_time” from 30 sec to 360 sec. If error still exists, go to .htaccess file and add the following script. 
-<IfModule mod_php5.c>
-php_value post_max_size 200M
-php_value upload_max_filesize 200M
-php_value memory_limit 300M
-php_value max_execution_time 259200
-php_value max_input_time 259200
-php_value session.gc_maxlifetime 1200
-</IfModule>
-o	If CURL error pops up, make sure Internet connection is on.
-o	If roksprocket or rokcommom plugin warnings appear post migration in new admin panel, uninstall them and install the latest version and enable them.
+   *If a JSON error pops up with PHP timeout error, go to php.ini file and increase the “max_execution_time” from 30 sec to 360 sec. If error still exists, go to .htaccess file and add the following script. 
+   <IfModule mod_php5.c>
+   php_value post_max_size 200M
+   php_value upload_max_filesize 200M
+   php_value memory_limit 300M
+   php_value max_execution_time 259200
+   php_value max_input_time 259200
+   php_value session.gc_maxlifetime 1200
+   </IfModule>
+   *	If CURL error pops up, make sure Internet connection is on.
+   *	If roksprocket or rokcommom plugin warnings appear post migration in new admin panel, uninstall them and install the latest version and enable them.
 *	Once the migration is complete, check the back end for any errors. If there are any fatal errors regarding plugins, disable them at the backend and restart the migration process.
 *	Remove all old templates. Disable and delete all the modules which are not required.
 *	The extension manager will have the following important extensions:
