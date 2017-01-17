@@ -150,4 +150,4 @@ Configure LDAP
 
 Screenshot of a working student portal during iteration2
 
-![image](https://cloud.githubusercontent.com/assets/15920562/22004532/6e841668-dcb0-11e6-8b9a-76d54d629b8d.png)
+![image](https://cloud.githubusercontent.com/assets/15920562/22004676/a0fdec8a-dcb1-11e6-9a07-845b5b87dff8.png)
