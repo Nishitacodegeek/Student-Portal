@@ -48,8 +48,7 @@ o	RokSprocket 2.1.14
 o	Akeeba backup 5.1.4
 o	Chronoforms V5
 o	Docman 2.1
-o	 Latest rocket theme (photon 1.0.2)
-*	Take a backup of this instance using Akeeba backup and upload it into server. Set up server using the following steps and unzip the backup and install the joomla instance. 
+o	 Latest rocket theme (photon 1.0.2).Take a backup of this instance using Akeeba backup and upload it into server. Set up server using the following steps and unzip the backup and install the joomla instance. 
 ---
 Steps followed while hosting mywai student portal on VMs.
 ---
