@@ -152,6 +152,6 @@ Screenshot of a working student portal "Home" Page.
 
 ![mywai](https://cloud.githubusercontent.com/assets/15920562/22411761/6acfc800-e6fb-11e6-95ea-a5a2ff351638.png)
 
-Screenshot of a working student portal "News" Page during iteration n
+Screenshot of a working student portal "News" Page 
 
-
+![news](https://cloud.githubusercontent.com/assets/15920562/22411790/bd6bea30-e6fb-11e6-9095-b084533f8ce2.png)
