@@ -1,6 +1,6 @@
 # Student-Portal
 ---
-Discription: Student portal created for students to login to their account to access institute announcements using Joomla CMS and link to Moodle LMS for students to read their lessons
+Discription: Student portal created for students to login to their account to access institute announcements using Joomla CMS, Gantry Framework, CentOS, Apache server, MySQL, PHP and link to Moodle LMS using Joomdle Plugin for students to read their lessons
 ---
 Migrating current mywai student portal (2.5) to a new instance (3.5) using migratemeplus on local m/c
 ---
