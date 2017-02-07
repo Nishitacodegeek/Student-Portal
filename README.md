@@ -1,6 +1,6 @@
 # Student-Portal
 ---
-Discription: Student portal created for students to login to their account to access institute announcements using Joomla CMS, Gantry Framework, CentOS, Apache server, MySQL, PHP and link to Moodle LMS using Joomdle Plugin
+Discription: Student portal created for students to login to their account to access institute announcements using Joomla CMS, Gantry Framework, React.js, CentOS, Apache server, MySQL, PHP and link to Moodle LMS using Joomdle Plugin
 ---
 Migrating current mywai student portal (2.5) to a new instance (3.5) using migratemeplus on local m/c
 ---
@@ -148,10 +148,10 @@ Configure LDAP
 *	Add the custom CSS in backend : /var/site/www/templates/rt_topaz/custom/scss/
 * Change to this directory and create a file called custom.scss and add CSS codes. Recompile CSS in admin panel for ‘base outline’ template and see the changes reflected.
 
-Screenshot of a working student portal "Home" Page.
+Screenshot of a working student portal "Home" Page built using HTML 5, SCSS, React.js, PHP.
 
 ![mywai](https://cloud.githubusercontent.com/assets/15920562/22411761/6acfc800-e6fb-11e6-95ea-a5a2ff351638.png)
 
-Screenshot of a working student portal "News" Page 
+Screenshot of a working student portal "News" Page where news reader is built using React.js
 
 ![news](https://cloud.githubusercontent.com/assets/15920562/22411790/bd6bea30-e6fb-11e6-9095-b084533f8ce2.png)
